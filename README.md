@@ -7,7 +7,7 @@ This project is a simulation of an academic institution system built using a **m
 ## 🧩 Microservices Overview
 
 ### 🔐 Authentication Service
-Handles user registration, login, role management, and JWT-based authentication.
+Handles user registration, login, role management.
 
 ### 📚 Course Service
 Manages course creation, updates, deletions, and listing.
