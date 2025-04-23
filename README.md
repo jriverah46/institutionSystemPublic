@@ -34,6 +34,5 @@ Centralized configuration management for all services using Spring Cloud Config.
 - Java 17
 - Spring Boot
 - Spring Cloud (Eureka, Gateway, Config)
-- Spring Security
 - PostgreSQL 
 - Maven
