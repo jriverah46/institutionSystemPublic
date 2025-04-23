@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: course-microservice
+
+  config:
+    import: "configserver:http://localhost:8081"
+
+
+

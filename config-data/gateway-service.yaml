@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+      routes:
+        - id: authentication-microservice
+          uri: lb://authentication-microservice
+          predicates:
+            - Path=/user/**
+        - id: course-microservice
+          uri: lb://course-microservice
+          predicates:
+            - Path=/courses/**
+        - id: enrollment-microservice
+          uri: lb://enrollment-microservice
+          predicates:
+            - Path=/enrollment/**
+
+        - id: notes-microservice
+          uri: lb://notes-microservice
+          predicates:
+            - Path=/grades/**
+
+
