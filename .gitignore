@@ -1,0 +1,53 @@
+# =====================================
+# Java + Spring Boot + Maven + macOS
+# =====================================
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Archivos generados por compilación
+target/
+out/
+
+# Configuración del IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de Maven Wrapper
+.mvn/
+!**/mvnw
+!**/mvnw.cmd
+
+# Archivos de Eclipse (por si alguien lo usa)
+.classpath
+.project
+.settings/
+
+# Archivos de VS Code (si alguien lo usa también)
+.vscode/
+
+# Archivos de entorno
+.env
+*.env
+
+# Archivos de base de datos embebida (ej. H2, SQLite)
+*.h2.db
+*.mv.db
+*.sqlite
+
+# Archivos de pruebas
+test-output/
+surefire-reports/
+
+# Configs temporales de Spring Boot devtools
+.spring-boot-devtools.properties
+
+# Otros
+logs/
+tmp/
